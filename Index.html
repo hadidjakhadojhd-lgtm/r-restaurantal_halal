@@ -1,1 +1,377 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <title>R-Restaurant Al Halal</title>
+
+        <style>
+            *{
+                  margin:0;
+                    padding:0;
+                      box-sizing:border-box;
+                        scroll-behavior:smooth;
+            }
+
+            body{
+                  font-family:Arial,sans-serif;
+                    background:#fffaf2;
+                      color:#222;
+                        line-height:1.6;
+            }
+
+            header{
+                  background:#123b2a;
+                    color:white;
+                      padding:18px 6%;
+                        display:flex;
+                          justify-content:space-between;
+                            align-items:center;
+                              position:sticky;
+                                top:0;
+                                  z-index:1000;
+            }
+
+            .logo{
+                  font-size:22px;
+                    font-weight:bold;
+            }
+
+            nav a{
+                  color:white;
+                    text-decoration:none;
+                      margin-left:15px;
+                        font-weight:bold;
+            }
+
+            .hero{
+                  min-height:80vh;
+                    display:flex;
+                      align-items:center;
+                        justify-content:center;
+                          text-align:center;
+                            padding:60px 20px;
+                              background:linear-gradient(
+                                    rgba(18,59,42,.85),
+                                        rgba(18,59,42,.85)
+                              );
+                                color:white;
+            }
+
+            .hero h1{
+                  font-size:45px;
+                    margin-bottom:15px;
+            }
+
+            .hero p{
+                  font-size:19px;
+                    max-width:650px;
+                      margin:auto;
+            }
+
+            .btn{
+                  display:inline-block;
+                    margin-top:25px;
+                      padding:14px 25px;
+                        background:#e3a62f;
+                          color:#111;
+                            text-decoration:none;
+                              border-radius:8px;
+                                font-weight:bold;
+            }
+
+            section{
+                  padding:65px 7%;
+            }
+
+            .section-title{
+                  text-align:center;
+                    color:#123b2a;
+                      font-size:32px;
+                        margin-bottom:35px;
+            }
+
+            .menu{
+                  display:grid;
+                    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+                      gap:22px;
+                        max-width:1100px;
+                          margin:auto;
+            }
+
+            .card{
+                  background:white;
+                    padding:25px;
+                      border-radius:15px;
+                        box-shadow:0 5px 20px rgba(0,0,0,.1);
+                          text-align:center;
+            }
+
+            .card h3{
+                  color:#123b2a;
+                    margin-bottom:10px;
+            }
+
+            .price{
+                  color:#b47713;
+                    font-size:20px;
+                      font-weight:bold;
+                        margin-top:12px;
+            }
+
+            .about{
+                  background:#f1eadc;
+                    text-align:center;
+            }
+
+            .about p{
+                  max-width:800px;
+                    margin:auto;
+            }
+
+            .contact{
+                  background:#123b2a;
+                    color:white;
+                      text-align:center;
+            }
+
+            .contact .section-title{
+                  color:white;
+            }
+
+            .whatsapp{
+                  background:#25d366;
+                    color:white;
+                      display:inline-block;
+                        padding:14px 24px;
+                          border-radius:8px;
+                            text-decoration:none;
+                              font-weight:bold;
+                                margin-top:20px;
+            }
+
+            footer{
+                  background:#0b251a;
+                    color:white;
+                      text-align:center;
+                        padding:22px;
+                          font-size:14px;
+            }
+
+            @media(max-width:700px){
+                  header{
+                        flex-direction:column;
+                            gap:10px;
+                  }
+
+                    nav a{
+                            margin:5px;
+                    }
+
+                      .hero h1{
+                            font-size:32px;
+                      }
+
+                        .hero p{
+                                font-size:16px;
+                        }
+                    }
+                </style>
+            </head>
+
+            <body>
+
+                <header>
+
+                    <div class="logo">
+                        🍽️ R-Restaurant Al Halal
+                    </div>
+
+                    <nav>
+                        <a href="#accueil">Accueil</a>
+                        <a href="#menu">Menu</a>
+                        <a href="#apropos">À propos</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+
+                </header>
+
+
+                <section class="hero" id="accueil">
+
+                    <div>
+
+                        <h1>Bienvenue chez R-Restaurant Al Halal</h1>
+
+                        <p>
+                            Découvrez des plats savoureux, préparés avec soin
+                            dans le respect des principes du halal.
+                        </p>
+
+                        <a href="#menu" class="btn">
+                            🍽️ Découvrir notre menu
+                        </a>
+
+                    </div>
+
+                </section>
+
+
+                <section id="menu">
+
+                    <h2 class="section-title">
+                        🍽️ Notre Menu
+                    </h2>
+
+                    <div class="menu">
+
+                        <div class="card">
+
+                            <h3>🍗 Poulet grillé</h3>
+
+                            <p>
+                                Poulet tendre grillé avec nos épices maison.
+                            </p>
+
+                            <div class="price">
+                                3 500 FCFA
+                            </div>
+
+                        </div>
+
+
+                        <div class="card">
+
+                            <h3>🍚 Riz au poulet</h3>
+
+                            <p>
+                                Riz parfumé accompagné de délicieux poulet halal.
+                            </p>
+
+                            <div class="price">
+                                3 000 FCFA
+                            </div>
+
+                        </div>
+
+
+                        <div class="card">
+
+                            <h3>🥩 Viande grillée</h3>
+
+                            <p>
+                                Viande grillée accompagnée d'une garniture savoureuse.
+                            </p>
+
+                            <div class="price">
+                                4 000 FCFA
+                            </div>
+
+                        </div>
+
+
+                        <div class="card">
+
+                            <h3>🍔 Burger halal</h3>
+
+                            <p>
+                                Burger maison avec viande halal et légumes frais.
+                            </p>
+
+                            <div class="price">
+                                3 500 FCFA
+                            </div>
+
+                        </div>
+
+
+                        <div class="card">
+
+                            <h3>🍟 Frites maison</h3>
+
+                            <p>
+                                Frites croustillantes préparées sur place.
+                            </p>
+
+                            <div class="price">
+                                1 500 FCFA
+                            </div>
+
+                        </div>
+
+
+                        <div class="card">
+
+                            <h3>🥗 Salade fraîche</h3>
+
+                            <p>
+                                Salade composée de légumes frais et sauce maison.
+                            </p>
+
+                            <div class="price">
+                                2 000 FCFA
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <section class="about" id="apropos">
+
+                    <h2 class="section-title">
+                        ❤️ À propos de nous
+                    </h2>
+
+                    <p>
+                        Bienvenue à R-Restaurant Al Halal.
+                        Notre objectif est de vous proposer une cuisine
+                        savoureuse, généreuse et préparée avec soin.
+                    </p>
+
+                </section>
+
+
+                <section class="contact" id="contact">
+
+                    <h2 class="section-title">
+                        📞 Contactez-nous
+                    </h2>
+
+                    <p>
+                        📍 R-Restaurant Al Halal
+                    </p>
+
+                    <p>
+                        📞 Téléphone : Votre numéro
+                    </p>
+
+                    <p>
+                        📱 WhatsApp : Votre numéro
+                    </p>
+
+                    <a class="whatsapp" href="#">
+                        💬 Commander sur WhatsApp
+                    </a>
+
+                </section>
+
+
+                <footer>
+
+                    © 2026 R-Restaurant Al Halal
+
+                    <br>
+
+                    Tous droits réservés.
+
+                </footer>
+
+            </body>
+            </html>
+                  }
+                              )
+            }
